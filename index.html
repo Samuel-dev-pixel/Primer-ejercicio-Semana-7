@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 1 Primero de Marzo Período1</title>
+
+	<script type="text/javascript">
+		x=[0];
+		console.log(x.length);
+		m=x.length;
+
+        function Subir() {
+        console.log(x.length);
+		m = x.length;
+		console.log(m);
+
+		if (m<6) {
+
+               var num1 = document.getElementById('Val1');
+               x.push(num1.value);
+               num1.value="";
+               }
+               else{
+               	alert("Ya se subieron 5 datos");
+               }
+               console.log(x[5]);
+               m++;
+               
+	}
+    
+    function Mostrar() {
+    	var num2 = document.getElementById('Val2');
+
+    	a=parseInt(x[1]);
+    	console.log(a);
+    	b=parseInt(x[2]);
+    	c=parseInt(x[3]);
+    	d=parseInt(x[4]);
+    	e=parseInt(x[5]);
+
+    	console.log(m);
+        
+        if (m==1) {
+        	    a=parseInt(0);
+        	    b=parseInt(0);
+        		c=parseInt(0);
+        		d=parseInt(0);
+        		e=parseInt(0);
+        }
+        else
+        {
+        	if (m==2) {
+        		b=parseInt(0);
+        		c=parseInt(0);
+        		d=parseInt(0);
+        		e=parseInt(0);
+        	}
+        	else
+        	{
+        		if (m==3) {
+        			c=parseInt(0);
+        		    d=parseInt(0);
+        		    e=parseInt(0);
+        		}
+        		else
+        		{
+        			if (m==4) {
+        				d=parseInt(0);
+        		        e=parseInt(0);
+        			}
+        			else
+        			{
+        				if (m==5) {
+        					e=parseInt(0);
+        				}
+        			}
+        		}
+        	}
+        }
+
+    	z=e;
+    	parseInt(z);
+    	console.log(z);
+    	z=a;
+
+    	if (z>=b) {
+    		if (z>=c) {
+    			if (z>=d) {
+    				if (z>=e) {num2.value=z;} else {z=e;num2.value=z;}
+    			}
+    			else
+    			{
+    				z=d;
+    				if (z>=e) {num2.value=z;} else {z=e;num2.value=z;}
+    			}	
+    		}
+    		else
+    		{
+    			z=c;
+    			if (z>=d) {
+    				if (z>=e) {num2.value=z;} else {z=e;num2.value=z;}
+    			}
+    		}
+    	}
+    	else
+    	{
+         z=b;
+         if (z>=c) {
+         	if (z>=d) {
+         		if (z>=e) {num2.value=z;} else {z=e;num2.value=z;}
+         	}
+         	else
+         	{
+         		z=d;
+         		if (z>=e) {num2.value=z;} else {z=e;num2.value=z;}
+         	}
+         }
+         else
+         {
+         	z=c;
+         	if (z>=d) {
+                       if (z>=e) {num2.value=z;} else {z=e;num2.value=z;}
+         	}
+         	else
+         	{
+         		z=d;
+         		if (z>=e) {num2.value=z;} else {z=e;num2.value=z;}
+         	}
+         }
+
+    	}	
+        
+    }
+
+	</script>
+</head>
+
+<style type="text/css">
+	.Fondo1{
+		display: block;
+		background-color: rgb(255,242,0);
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		height: 50%;
+		width: 100%;
+	}
+	.Fondo2{
+		display: block;
+		background-color: rgb(153,217,234);
+		position: absolute;
+		top: 50%;
+		left: 0%;
+		height: 50%;
+		width: 100%;
+	}
+	.Linea{
+		display: block;
+		background-color: black;
+		position: absolute;
+		top: 49%;
+		left: 10%;
+		height: 2%;
+		width: 80%;
+		border-style: solid;
+	}
+
+    .Number{
+    	position: absolute;
+    	top: 20%;
+    	left: 20%;
+    	height: 10%;
+    	width: 40%;
+    	border-style: outset;
+    	border-width: 5px;
+    	border-color: rgb(83,83,83);
+    	font-family: 'Cooper Black';
+    	font-size: 300%;
+    	text-align: center;
+    }
+
+    .Boton1{
+    	position: absolute;
+    	top: 20%;
+    	left: 84%;
+    	height: 10%;
+    	width: 12%;
+    	border-width: 5px;
+    	border-style: outset;
+    	border-color: rgb(83,83,83);
+    	font-family: 'Cooper Black';
+    	font-size: 300%;
+    	text-align: center;
+    }
+
+     .Number2{
+    	position: absolute;
+    	top: 70%;
+    	left: 20%;
+    	height: 10%;
+    	width: 40%;
+    	border-style: outset;
+    	border-width: 5px;
+    	border-color: rgb(83,83,83);
+    	font-family: 'Cooper Black';
+    	font-size: 300%;
+    	text-align: center;
+    }
+
+    .Boton2{
+    	position: absolute;
+    	top: 70%;
+    	left: 83.5%;
+    	height: 10%;
+    	width: 13%;
+    	border-width: 5px;
+    	border-style: outset;
+    	border-color: rgb(83,83,83);
+    	font-family: 'Cooper Black';
+    	font-size: 300%;
+    	text-align: center;
+    }
+    .volver {
+    	position: absolute;
+    	left: 1%;
+    	top: -10%;
+    	font-size: 450%;
+    	font-family: 'Cooper Black';
+    	text-decoration: none;
+    	color: black;
+    	z-index: 2;
+    }
+
+</style>
+
+
+
+<body>
+
+	<div class="Fondo1"></div>
+	<div class="Fondo2"></div>
+    <div class="Linea"></div>
+
+    <input type="number" name="Número-ent" class="Number" id="Val1" placeholder="Número aquí">
+    <button class="Boton1" onclick="Subir()">Subir<button>
+
+    <input type="number" name="Número-sal" class="Number2" value="" id="Val2" placeholder="Número más grande" readonly>
+    <button class="Boton2" onclick="Mostrar()">Hallar<button>
+
+    <a href="" ><p class="volver">Volver</p></a>
+
+</body>
+</html>
